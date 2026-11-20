@@ -24,7 +24,7 @@ export const AI_HELPS_WITH = 'Helping programming and asking 🌍 world wide que
 export const PROMO_TEXT = '';
 
 // ── Fixed settings ──
-export const GROQ_URL = 'https://'https://api.groq.com/openai/v1/models';
+export const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
 export const GROQ_MODEL = 'openai/gpt-oss-120b';
 export const REASONING_EFFORT = 'high';
 export const PREFIX = '.';
@@ -54,3 +54,9 @@ Rules:
 - If anyone asks what you are, your name, who made you, who owns you, or similar, answer that you are ${AI_NAME}, the AI assistant of ${CREATOR_NAME}. You may add: ${CREATOR_INFO}.
 - Never claim to be human. Never name the AI company or model behind you. If someone sincerely asks about the technology, say you are an AI assistant powered by an AI language model.
 - Reply in plain text suitable for WhatsApp (no markdown headings or tables), under about ${MAX_REPLY_CHARS} characters.`;
+
+// ── Added for the modular command files ──
+export const FOOTER = `${small('powered by')} ${CREATOR_NAME} ⚡ • ${small('version')} ${VERSION}`;
+export const MAX_SUBSESSIONS = 3; // extra numbers people can pair with .pair
+export const systemPrompt = (maxChars = MAX_REPLY_CHARS) =>
+  SYSTEM_PROMPT.replace(/under about \d+ characters/, `under about ${maxChars} characters`);
