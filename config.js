@@ -24,8 +24,8 @@ export const AI_HELPS_WITH = 'Helping programming and asking 🌍 world wide que
 export const PROMO_TEXT = '';
 
 // ── Fixed settings ──
-export const GROQ_URL = 'https://fei-ai.vercel.app/api/groq';
-export const GROQ_MODEL = 'openai/gpt-oss-20b';
+export const GROQ_URL = 'https://'https://api.groq.com/openai/v1/models';
+export const GROQ_MODEL = 'openai/gpt-oss-120b';
 export const REASONING_EFFORT = 'high';
 export const PREFIX = '.';
 export const MODE = 'PUBLIC'; // PUBLIC or PRIVATE (owner only)
