@@ -1,0 +1,17 @@
+{
+  "name": "merlin-exe-bot",
+  "version": "2.0.4",
+  "description": "Lightweight WhatsApp AI chatbot (Baileys + Groq)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "pino": "^9.0.0"
+  }
+}
