@@ -15,7 +15,7 @@ export const OWNER_NUMBER = '2349064331052';
 export const PAIR_NUMBER = '2349064331052';
 // Better practice: set GROQ_API_KEY as an environment variable on KataBump.
 export const GROQ_API_KEY =
-  process.env.GROQ_API_KEY || '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';
+  process.env.GROQ_API_KEY || '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';
 export const BOT_IMAGE =
   'https://res.cloudinary.com/kfivvhfe/image/upload/v1795117789/IMG-20261119-WA0116.jpg';
 export const AI_HELPS_WITH = 'Helping programming and asking 🌍 world wide questions and taught';
